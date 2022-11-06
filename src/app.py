@@ -10,20 +10,20 @@ app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 
 
 @app.route('/')
-def welcome():
+def welcome() -> str:
     return render_template('form.html')
 
 
 @app.route('/', methods=['POST'])
-def result():
+def result() -> str:
     json_string = schema_output()
 
     return render_template('form.html', entry=json_string)
 
 
-def schema_output():
+def schema_output() -> str:
     startdate = date_formatting()
-    df = pd.read_csv('out.csv')
+    df = pd.read_csv('data/out.csv')
 
     commission_avg_per_order, commission_total, commission_total_per_prom, \
         customers, discount_rate_avg, discount_total, \
@@ -57,21 +57,21 @@ def schema_output():
 def metric_values(df, startdate):
     report_metric = ReportMetric(df=df, startdate=startdate)
 
-    items = report_metric.items_sold()
-    customers = report_metric.costumer_total()
-    discount_rate_avg = report_metric.discount_rate()
-    order_total_avg = report_metric.order_total_avg()
-    discount_total = report_metric.discount_total()
-    commission_total = report_metric.comm_total()
-    commission_avg_per_order = report_metric.comm_avg()
-    commission_total_per_prom = report_metric.comm_total_prom()
-    
+    items = report_metric.items_sold()                          # -> int
+    customers = report_metric.costumer_total()                  # -> int
+    discount_rate_avg = report_metric.discount_rate()           # -> float
+    order_total_avg = report_metric.order_total_avg()           # -> float
+    discount_total = report_metric.discount_total()             # -> float
+    commission_total = report_metric.comm_total()               # -> float
+    commission_avg_per_order = report_metric.comm_avg()         # -> float
+    commission_total_per_prom = report_metric.comm_total_prom()  # -> dict()
+
     return commission_avg_per_order, commission_total, \
-    commission_total_per_prom, customers, discount_rate_avg, \
-    discount_total, items, order_total_avg
+        commission_total_per_prom, customers, discount_rate_avg, \
+        discount_total, items, order_total_avg
 
 
-def date_formatting():
+def date_formatting() -> str:
     startdate = datetime.datetime.strptime(
         request.form["var_3"],
         '%Y-%m-%d')
