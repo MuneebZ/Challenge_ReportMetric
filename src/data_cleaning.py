@@ -4,12 +4,12 @@ import pandas as pd
 def df_cleaning():
 
     # Load datasets
-    order = pd.read_csv('templates/data/orders.csv')
-    orderLine = pd.read_csv('templates/data/order_lines.csv')
-    # product = pd.read_csv('templates/data/products.csv')
-    promotion = pd.read_csv('templates/data/promotions.csv')
-    productProm = pd.read_csv('templates/data/product_promotions.csv')
-    vendorCom = pd.read_csv('templates/data/commissions.csv')
+    order = pd.read_csv('data/orders.csv')
+    orderLine = pd.read_csv('data/order_lines.csv')
+    # product = pd.read_csv('data/products.csv')
+    promotion = pd.read_csv('data/promotions.csv')
+    productProm = pd.read_csv('data/product_promotions.csv')
+    vendorCom = pd.read_csv('data/commissions.csv')
 
     order['date_parsed'] = pd.to_datetime(
         order['created_at'], infer_datetime_format=True)
@@ -19,6 +19,7 @@ def df_cleaning():
         vendorCom['date'], infer_datetime_format=True)
     productProm['date_parsed'] = pd.to_datetime(
         productProm['date'], infer_datetime_format=True)
+
     df = pd.merge(left=orderLine, right=order, how="left",
                   left_on='order_id', right_on='id')
     df = pd.merge(left=df, right=vendorCom, how="left", left_on=['date_parsed', 'vendor_id'],
