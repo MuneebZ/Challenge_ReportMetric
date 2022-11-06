@@ -3,7 +3,7 @@ import datetime
 import json
 import numpy as np
 import pandas as pd
-from functions import ReportMetric, df
+from functions import ReportMetric, NpEncoder
 
 app = Flask(__name__)
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
@@ -17,6 +17,7 @@ def welcome():
 @app.route('/', methods=['POST'])
 def result():
     json_string = schema_output()
+
     return render_template('form.html', entry=json_string)
 
 
@@ -64,7 +65,10 @@ def metric_values(df, startdate):
     commission_total = report_metric.comm_total()
     commission_avg_per_order = report_metric.comm_avg()
     commission_total_per_prom = report_metric.comm_total_prom()
-    return commission_avg_per_order, commission_total, commission_total_per_prom, customers, discount_rate_avg, discount_total, items, order_total_avg
+    
+    return commission_avg_per_order, commission_total, \
+    commission_total_per_prom, customers, discount_rate_avg, \
+    discount_total, items, order_total_avg
 
 
 def date_formatting():

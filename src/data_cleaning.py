@@ -33,3 +33,4 @@ def df_cleaning():
 
 
 df = df_cleaning()
+df.to_csv('data/out.csv', index=False)

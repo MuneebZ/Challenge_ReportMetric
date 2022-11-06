@@ -103,3 +103,14 @@ class ReportMetric:
 
     # def __post_init__(self):
     #     self.description = f"{self.df} at {self.startdate}"
+
+
+class NpEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, np.integer):
+            return int(obj)
+        if isinstance(obj, np.floating):
+            return float(obj)
+        if isinstance(obj, np.ndarray):
+            return obj.tolist()
+        return super(NpEncoder, self).default(obj)
