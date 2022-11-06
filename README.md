@@ -19,6 +19,8 @@ You will find an archive here https://updates.suade.org/files/data.zip that cont
 
 Your task is to create an endpoint that, for a given date, will return a report that will contain the following metrics:
 
+<br>
+
 – The total number of items sold on that day.
 
 – The total number of customers that made an order that day.

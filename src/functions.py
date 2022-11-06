@@ -80,7 +80,7 @@ class ReportMetric:
             'total_com'].values[0]
         return commissions_total
 
-    #
+    # The average amount of commissions per order for that day.
     def comm_avg(self):
         df_total_avg = self.df[['total_amount',
                                 'rate', 'date_parsed', 'order_id']]
@@ -91,7 +91,7 @@ class ReportMetric:
             'total_avg'].values[0]
         return commissions_order_average
 
-    #
+    # The total amount of commissions earned per promotion that day.
     def comm_total_prom(self):
         df_com_prom = self.df[['total_amount',
                                'rate', 'date_parsed', 'promotion_id']]
@@ -114,7 +114,6 @@ class NpEncoder(json.JSONEncoder):
     Defining our own enconder class to be used within the json.dumps function in app.py.
     This solves the TypeError problem: "Object of type '{type}' is not JSON serializable" 
     """
-
     def default(self, obj):
         if isinstance(obj, np.integer):
             return int(obj)
