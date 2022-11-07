@@ -1,5 +1,4 @@
-from flask import Flask, request
-import json
+from flask import Flask
 
 def configure_routes(app):
 

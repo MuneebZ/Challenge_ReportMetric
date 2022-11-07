@@ -15,7 +15,7 @@ def df_cleaning():
     # Load datasets
     order = pd.read_csv('data/orders.csv')
     orderLine = pd.read_csv('data/order_lines.csv')
-    # product = pd.read_csv('data/products.csv')        not used during the cleaning process
+    # product = pd.read_csv('data/products.csv')       not used during the cleaning process
     promotion = pd.read_csv('data/promotions.csv')
     productProm = pd.read_csv('data/product_promotions.csv')
     vendorCom = pd.read_csv('data/commissions.csv')
@@ -43,6 +43,7 @@ def df_cleaning():
     return df
 
 
+# Call the df_cleaning() function and assign it to df to get the final df needed
 df = df_cleaning()
 df = df.drop(['created_at', 'date_x', 'date_y', 'id_y'],
              axis=1)  # drop repeated columns
