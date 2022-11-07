@@ -45,9 +45,11 @@ Your task is to create an endpoint that, for a given date, will return a report 
       <a href="#about-the-project">About The Project</a>
     </li>
     <li>
+      <a href="#the-challange">The Challange</a>
+    </li>
+    <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
