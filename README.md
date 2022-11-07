@@ -1,11 +1,10 @@
 <h1>Suade Labs Python Challange 2022 – Muneeb Zafar</h1>
 
-
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
 
-This repo exists as my submission for the Suade Labs Python Challange 2022. Once submitted and received, it will most likely go private for privacy reasons. The challange itself is found in the next section.
+This repo exists as my submission for the Suade Labs Python Challange 2022. Once submitted and received, it will probably become private to protect confidentiality. The details of the challenge can be found in the following section.
 
 <!-- The Challange -->
 
@@ -59,10 +58,6 @@ Your task is to create an endpoint that, for a given date, will return a report 
 </details>
 <br>
 
-
-
-
-
 <!-- GETTING STARTED -->
 
 ## Getting Started
@@ -73,12 +68,15 @@ running follow these simple example steps.
 ### Installation
 
 1. Clone the repo
+
    ```sh
    git clone https://github.com/MuneebZ/Challenge_ReportMetric.git
    ```
-2. Install the requirments by running the `setup.py` file
+
+2. Install the `requirements.txt` file into a virtualenv or your environment of choice
+
    ```sh
-   python setup.py install 
+   pip install -r requirements.txt
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -87,10 +85,21 @@ running follow these simple example steps.
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos
-work well in this space. You may also link to more resources.
+Run the application by typing `python -m flask run` in the Integrated Terminal to launch the Flask development server. By default, the development server searches for `app.py`. When you use Flask, the following output ought to appear:
+   ```sh
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+   ```
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Once running, follow the url link provided in the terminal, being `http://127.0.0.1:5000/` (or `http://localhost:5000/` also works). 
+
+You are greeted with an endpoint that takes a `Date:` as an input via a form. The date range is from `2019-08-01` until `2019-09-29` as there are 60 days in total from the data provided. This can be changed on `line 31` in `forms.html`.
+
+Once you have selected a date, click on submit and below `Results:` you will get the necessary endpoint response in a `JSON` format.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,6 +112,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 [comment]: <> (4. Push to the Branch &#40;`git push origin feature/AmazingFeature`&#41;)
 
 [comment]: <> (5. Open a Pull Request)
+
 <!-- LICENSE -->
 
 ## License
@@ -114,7 +124,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Muneeb Zafar – muneebzafar@outlook.com 
+Muneeb Zafar – muneebzafar@outlook.com
 
 Project Link: [https://github.com/MuneebZ/Challenge_ReportMetric](https://github.com/MuneebZ/Challenge_ReportMetric)
 
