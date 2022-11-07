@@ -90,7 +90,7 @@ Use the example steps listed below to set up a local copy.
 
 ## Usage
 
-Run the application by typing `python -m flask run` in the Integrated Terminal to launch the Flask development server. By default, the development server searches for `app.py`. When you use Flask, the following output ought to appear:
+Run the application by typing `python -m flask run` in the integrated terminal to launch the Flask development server. By default, the development server searches for `app.py`. When you use Flask, the following output ought to appear:
 
 ```sh
 * Serving Flask app "app" (lazy loading)
@@ -106,6 +106,8 @@ Once running, follow the url link provided in the terminal, being `http://127.0.
 You are greeted with an endpoint that takes a `Date:` as an input via a form. The date range is from `2019-08-01` until `2019-09-29` as there are 60 days in total from the data provided. This can be changed on `line 31` in `forms.html`.
 
 Once you have selected a date, click on submit and below `Results:` you will get the necessary endpoint response in a `JSON` format.
+
+The tests can be run by typing `pytest` in the integrated terminal.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
