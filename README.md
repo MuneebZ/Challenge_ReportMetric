@@ -77,6 +77,12 @@ Use the example steps listed below to set up a local copy.
    ```sh
    pip install -r requirements.txt
    ```
+   
+   Or install the requirments by running the `setup.py` file
+   ```sh
+   python setup.py install 
+   ```
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
