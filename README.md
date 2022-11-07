@@ -134,7 +134,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Muneeb Zafar – muneebzafar@outlook.com
+Muneeb Zafar – muneeb-zafar@outlook.com
 
 Project Link: [https://github.com/MuneebZ/Challenge_ReportMetric](https://github.com/MuneebZ/Challenge_ReportMetric)
 
