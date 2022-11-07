@@ -62,8 +62,7 @@ Your task is to create an endpoint that, for a given date, will return a report 
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally. To get a local copy up and
-running follow these simple example steps.
+Use the example steps listed below to set up a local copy.
 
 ### Installation
 
@@ -86,16 +85,17 @@ running follow these simple example steps.
 ## Usage
 
 Run the application by typing `python -m flask run` in the Integrated Terminal to launch the Flask development server. By default, the development server searches for `app.py`. When you use Flask, the following output ought to appear:
-   ```sh
- * Serving Flask app "app" (lazy loading)
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: on
- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-   ```
 
-Once running, follow the url link provided in the terminal, being `http://127.0.0.1:5000/` (or `http://localhost:5000/` also works). 
+```sh
+* Serving Flask app "app" (lazy loading)
+* Environment: production
+WARNING: This is a development server. Do not use it in a production deployment.
+Use a production WSGI server instead.
+* Debug mode: on
+* Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+```
+
+Once running, follow the url link provided in the terminal, being `http://127.0.0.1:5000/` (or `http://localhost:5000/` also works).
 
 You are greeted with an endpoint that takes a `Date:` as an input via a form. The date range is from `2019-08-01` until `2019-09-29` as there are 60 days in total from the data provided. This can be changed on `line 31` in `forms.html`.
 
