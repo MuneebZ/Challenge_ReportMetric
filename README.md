@@ -1,14 +1,16 @@
-<h1>Suade Labs Python Challange 2022 – Muneeb Zafar</h1>
+<h1>S**** Labs Python Challange 2022 – Muneeb Zafar</h1>
 
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
 
-This repo exists as my submission for the Suade Labs Python Challange 2022. Once submitted and received, it will probably become private to protect confidentiality. The details of the challenge can be found in the following section.
+This repo exists as my submission for the S**** Labs Python Challange 2022. Once submitted and received, it will probably become private to protect confidentiality. <!-- The details of the challenge have been commented out can be found in the following commented out section. -->
 
-<!-- The Challange -->
+<!-- The Challenge -->
 
-## The Challange
+<!-- Uncomment this whole section to view the challenge details
+
+## The Challenge
 
 We are expecting you to deliver your work as a git project, with a README file containing instructions on how to install/run the project.
 
@@ -34,7 +36,7 @@ Your task is to create an endpoint that, for a given date, will return a report 
 
 – The average amount of commissions per order for that day.
 
-– The total amount of commissions earned per promotion that day.
+– The total amount of commissions earned per promotion that day.   -->
 
 <!-- TABLE OF CONTENTS -->
 <br>
@@ -44,9 +46,11 @@ Your task is to create an endpoint that, for a given date, will return a report 
     <li>
       <a href="#about-the-project">About The Project</a>
     </li>
+    <!-- UNCOMMENT TO ADD 'The Challenge TO TABLE OF CONTENTS
     <li>
-      <a href="#the-challange">The Challange</a>
-    </li>
+      <a href="#the-challenge">The Challenge</a>
+    </li> 
+    -->
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -115,11 +119,11 @@ The tests can be run by typing `pytest` in the integrated terminal.
 
 [comment]: <> (1. Fork the Project)
 
-[comment]: <> (2. Create your Feature Branch &#40;`git checkout -b feature/AmazingFeature`&#41;)
+[comment]: <> (2. Create your Feature Branch &#40;`git checkout -b `&#41;)
 
-[comment]: <> (3. Commit your Changes &#40;`git commit -m 'Add some AmazingFeature'`&#41;)
+[comment]: <> (3. Commit your Changes &#40;`git commit -m `&#41;)
 
-[comment]: <> (4. Push to the Branch &#40;`git push origin feature/AmazingFeature`&#41;)
+[comment]: <> (4. Push to the Branch &#40;`git push origin `&#41;)
 
 [comment]: <> (5. Open a Pull Request)
 
