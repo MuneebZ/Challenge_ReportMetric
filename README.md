@@ -1,42 +1,26 @@
-<h1>S**** Labs Python Challange 2022 – Muneeb Zafar</h1>
+<h1>Flask Product Analytics Report</h1>
 
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
 
-This repo exists as my submission for the S**** Labs Python Challange 2022. Once submitted and received, it will probably become private to protect confidentiality. <!-- The details of the challenge have been commented out can be found in the following commented out section. -->
+This repo exists as a personal project to combine the Python pandas and flask module into a working project. Using sample data from a ficitonal e-shop, we create report metrics that we would like to output to an endpoint via JSON format for a given date. We want our enpoint report to have the folllowing metrics:
 
-<!-- The Challenge -->
+– The total number of customers on a given day.
 
-<!-- Uncomment this whole section to view the challenge details
+– The total amount of the day's discounts.
 
-## The Challenge
+– The total quantity of items sold on a given day.
 
-We are expecting you to deliver your work as a git project, with a README file containing instructions on how to install/run the project.
+– The day's average order total
 
-You should use python 3 and a web framework of your choice, we use Flask but it is okay to use something else.
+– The total commissions earned on a given day.
 
-You will find an archive here https://updates.suade.org/files/data.zip that contains sample data from an imaginary e-shop.
+– The average commission rate per order on a given day.
 
-Your task is to create an endpoint that, for a given date, will return a report that will contain the following metrics:
+– The total commissions received that day for each promotion.
 
-<br>
-
-– The total number of items sold on that day.
-
-– The total number of customers that made an order that day.
-
-– The total amount of discount given that day.
-
-– The average discount rate applied to the items sold that day.
-
-– The average order total for that day
-
-– The total amount of commissions generated that day.
-
-– The average amount of commissions per order for that day.
-
-– The total amount of commissions earned per promotion that day.   -->
+More details about the project can be found below.
 
 <!-- TABLE OF CONTENTS -->
 <br>
@@ -46,11 +30,6 @@ Your task is to create an endpoint that, for a given date, will return a report 
     <li>
       <a href="#about-the-project">About The Project</a>
     </li>
-    <!-- UNCOMMENT TO ADD 'The Challenge TO TABLE OF CONTENTS
-    <li>
-      <a href="#the-challenge">The Challenge</a>
-    </li> 
-    -->
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -68,7 +47,7 @@ Your task is to create an endpoint that, for a given date, will return a report 
 
 ## Getting Started
 
-Use the example steps listed below to set up a local copy.
+Use the steps listed below to set up a local copy.
 
 ### Installation
 
@@ -111,7 +90,7 @@ Once running, follow the url link provided in the terminal, being `http://127.0.
 
 You are greeted with an endpoint that takes a `Date:` as an input via a form. The date range is from `2019-08-01` until `2019-09-29` as there are 60 days in total from the data provided. This can be changed on `line 31` in `forms.html`.
 
-Once you have selected a date, click on submit and below `Results:` you will get the necessary endpoint response in a `JSON` format.
+Once you have selected a date, click on submit and below `Results:` you will get the necessary endpoint response in a `JSON` format. The promotion ids 1 – 5 are from Google Ads, Organics Google, Organic DuckDuckGo, DuckDuckGo Ads, Bing respectively.
 
 The tests can be run by typing `pytest` in the integrated terminal.
 
