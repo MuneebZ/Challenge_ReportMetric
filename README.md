@@ -54,7 +54,7 @@ Use the steps listed below to set up a local copy.
 1. Clone the repo
 
    ```sh
-   git clone https://github.com/MuneebZ/Challenge_ReportMetric.git
+   git clone https://github.com/MuneebZ/Flask_AnalyticsReport.git
    ```
 
 2. Install the `requirements.txt` file into a virtualenv or your environment of choice
@@ -119,6 +119,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Muneeb Zafar – muneeb-zafar@outlook.com
 
-Project Link: [https://github.com/MuneebZ/Challenge_ReportMetric](https://github.com/MuneebZ/Challenge_ReportMetric)
+Project Link: [https://github.com/MuneebZ/Flask_AnalyticsReport](https://github.com/MuneebZ/Flask_AnalyticsReport)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
